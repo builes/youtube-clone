@@ -64,9 +64,9 @@ const deleteVideos = async (req, res) => {
 };
 
 const deleteVideo = async (req, res) => {
-  // const videos = await Video.find();
+  console.log("delete video");
   await Video.findByIdAndDelete(req.params.id);
-  // res.send("deleted video");
+  res.send("deleted video");
 };
 
 const downloadVideo = async (req, res) => {

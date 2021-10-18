@@ -19,7 +19,7 @@ router.get("/:song", getVideo);
 // router.get("/me/upload", getUploadVideo);
 // router.get("/me", auth, getOwnVideos);
 // router.delete("/me/deletevideos", auth, deleteVideos);
-router.get("/:id", deleteVideo);
+router.delete("/:id", deleteVideo);
 // router.get("/download/:id", downloadVideo);
 
 module.exports = router;

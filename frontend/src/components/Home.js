@@ -21,7 +21,7 @@ export default function Home() {
 
   const deleteVideo = async (id) => {
     console.log(id);
-    await axios.delete("http://localhost:3001/api/videos/" + id);
+    await axios.delete("http://localhost:4000/api/videos/" + id);
     window.location.href = "/";
   };
 
